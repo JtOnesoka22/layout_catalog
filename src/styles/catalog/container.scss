@@ -1,11 +1,23 @@
 .container {
   display: grid;
   margin: 0 auto;
-  padding: 50px 40px;
+  padding: $container-padding-vertical $container-padding-horizontal;
   height: 816px;
   width: 950px;
-  grid-template-columns: repeat(4, 200px);
   justify-content: start;
+  gap: $gap-vertical $gap-horizontal;
 
-  gap: 48px 46px;
+  grid-template-columns: repeat(1, $card-width);
+
+  @media (min-width: $bp-2cols) {
+    grid-template-columns: repeat(2, $card-width);
+  }
+
+  @media (min-width: $bp-3cols) {
+    grid-template-columns: repeat(3, $card-width);
+  }
+
+  @media (min-width: $bp-4cols) {
+    grid-template-columns: repeat(4, $card-width);
+  }
 }

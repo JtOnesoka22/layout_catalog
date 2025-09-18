@@ -1,5 +1,5 @@
 .card {
-  width: 200px;
+  width: $card-width;
   height: 406px;
   background-color: $color-white;
   border: 1px solid $card-border-color;
@@ -8,6 +8,13 @@
 
   &__top {
     display: flex;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: $cor_texto_primaria;
   }
 
   &__image {
@@ -22,10 +29,10 @@
   }
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale($card-scale);
   }
 
-  &:hover .product__title {
+  &:hover .card__title {
     color: $title-hover-color;
     transition: color $transition-duration;
   }

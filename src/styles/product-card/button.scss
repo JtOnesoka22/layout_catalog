@@ -12,6 +12,9 @@
   line-height: $font-size-lg;
 
   &:hover {
+    transition:
+      background-color $transition-duration,
+      color $transition-duration;
     background-color: $color-white;
     color: $color-accent;
     border-radius: $border-radius;
