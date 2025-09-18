@@ -19,9 +19,10 @@
     align-items: center;
     font-size: 12px;
     text-decoration: none;
-    color: #000;
+    color: $cor-texto-primaria;
     height: 60px;
     text-transform: uppercase;
+    transition: color $transition-duration;
   }
 
   &__link:hover {

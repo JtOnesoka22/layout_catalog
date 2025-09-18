@@ -1,9 +1,9 @@
 .logo {
-  width: 40px;
-  height: 40px;
+  width: $logo-size;
+  height: $logo-size;
   opacity: 1;
 
-  &-link {
+  &__link {
     display: flex;
     align-items: center;
   }

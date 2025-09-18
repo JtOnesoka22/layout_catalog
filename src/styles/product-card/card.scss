@@ -1,9 +1,10 @@
 .card {
-  width: 198px;
+  width: 200px;
   height: 406px;
   background-color: $color-white;
   border: 1px solid $card-border-color;
   border-radius: $border-radius;
+  transition: transform $transition-duration;
 
   &__top {
     display: flex;
@@ -18,5 +19,14 @@
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
     image-rendering: smooth;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:hover .product__title {
+    color: $title-hover-color;
+    transition: color $transition-duration;
   }
 }

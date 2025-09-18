@@ -1,11 +1,11 @@
 .container {
   display: grid;
   margin: 0 auto;
-  padding-top: 50px;
+  padding: 50px 40px;
   height: 816px;
   width: 950px;
   grid-template-columns: repeat(4, 200px);
   justify-content: start;
 
-  gap: 46px 48px;
+  gap: 48px 46px;
 }
